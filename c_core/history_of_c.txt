@@ -1,0 +1,3 @@
+Brief History of C:
+
+The C programming language was developed in the Bell Labs of AT&T (American Telephone & Telegraph [U.S.A]) by an employee called Dennis Ritchie between 1969 and 1973 while working on "Unix" operating system. He created this language using ALGOL, BCPL, and B the languages that were used before C was created.
