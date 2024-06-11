@@ -1,0 +1,191 @@
+keywords are reserved words that have a predefined meaning in the language. These words are part of the language's syntax and cannot be used for variable names, function names, or any other identifier. Keywords are essential in defining the structure and control flow of a C program.
+
+auto:
+Used to declare automatic (local) variables. It is rarely used because by default, local variables are auto.
+Example: auto int a;
+
+break:
+Exits from the nearest enclosing loop or switch statement.
+Example: break;
+
+case:
+Defines a branch in a switch statement.
+Example:
+switch (value) {
+    case 1: printf("One"); break;
+    case 2: printf("Two"); break;
+}
+
+char:
+Declares a character type variable that typically occupies 1 byte.
+Example: char letter = 'A';
+
+const:
+Declares a variable whose value cannot be changed after initialization.
+Example: const int MAX = 100;
+
+continue:
+Skips the rest of the loop iteration and moves to the next iteration.
+Example:
+for (int i = 0; i < 10; i++) {
+    if (i == 5) continue;
+    printf("%d ", i);
+}
+
+default:
+Specifies the default case in a switch statement when no case matches
+Example:
+switch (value) {
+    case 1: printf("One"); break;
+    default: printf("Default case");
+}
+
+do:
+Starts a do-while loop, which executes at least once before checking the condition.
+Example:
+do {
+    printf("Hello");
+} while (condition);
+
+double:
+Declares a double-precision floating-point variable.
+Example: double pi = 3.14159;
+
+else:
+Specifies an alternative block of code if an if condition is false.
+Example:
+if (x > 0) {
+    printf("Positive");
+} else {
+    printf("Non-positive");
+}
+
+enum:
+Declares an enumeration, a user-defined type with named integer constants.
+Example:
+enum Day {Sunday, Monday, Tuesday};
+
+extern:
+Declares a variable or function that is defined in another file or scope.
+Example: extern int globalVar;
+
+float:
+Declares a single-precision floating-point variable.
+Example: float temperature = 36.5f;
+
+for:
+Starts a for loop, which iterates a specified number of times.
+Example:
+for (int i = 0; i < 10; i++) {
+    printf("%d", i);
+}
+
+goto:
+Transfers control to the labeled statement. It is generally discouraged due to readability and maintenance concerns.
+Example:
+goto label;
+// Some code
+label: printf("Jumped here!");
+
+if:
+Starts a conditional statement that executes a block of code if a condition is true.
+Example:
+if (x > 0) {
+    printf("Positive");
+}
+
+int:
+Declares an integer variable.
+Example: int count = 10;
+
+long:
+Declares a long integer variable, which can store larger values than a regular int.
+Example: long largeNumber = 1234567890L;
+
+register:
+Suggests that the variable be stored in a CPU register for faster access.
+Example: register int counter;
+
+return:
+Exits a function and optionally returns a value to the caller.
+Example:
+return 0;
+
+short:
+Declares a short integer variable, typically smaller in size than an int.
+Example: short smallNum = 10;
+
+signed:
+Specifies that a variable can hold both positive and negative values. Default for most integer types.
+Example: signed int num = -5;
+
+sizeof:
+Returns the size, in bytes, of a data type or variable.
+Example: sizeof(int);
+
+static:
+Keeps a variable in existence during the lifetime of the program and restricts its visibility.
+Example:
+static int count = 0;
+
+struct:
+Defines a structure, a user-defined type that groups different types of variables.
+Example:
+struct Point {
+    int x;
+    int y;
+};
+
+switch:
+Allows a variable to be tested for equality against a list of values.
+Example:
+switch (num) {
+    case 1: printf("One"); break;
+    case 2: printf("Two"); break;
+}
+
+typedef:
+Creates an alias for a data type, making code more readable.
+Example:
+typedef unsigned long ulong;
+
+union:
+Declares a union, a data structure where all members share the same memory location.
+Example:
+union Data {
+    int i;
+    float f;
+    char str[20];
+};
+
+unsigned:
+Specifies that a variable can hold only positive values, doubling the maximum range.
+Example: unsigned int positiveNum = 25;
+
+void:
+Indicates that a function does not return a value or that a pointer is of an unspecified type.
+Example: void functionName();
+
+volatile:
+Tells the compiler that a variable's value may change at any time, preventing certain optimizations.
+Example: volatile int flag;
+
+while:
+Starts a loop that continues as long as a specified condition is true.
+Example:
+while (count < 10) {
+    printf("%d", count);
+    count++;
+}
+
+_Bool:
+Introduced in C99, used to declare boolean variables (true/false).
+Example: _Bool isTrue = 1;
+
+_Complex:
+Introduced in C99, used to declare complex number types.
+Example: _Complex double z = 1.0 + 2.0*I;
+
+_Imaginary:
+Introduced in C99, used to declare imaginary number types.
+Example: _Imaginary double y = 3.0 * _Imaginary_I;

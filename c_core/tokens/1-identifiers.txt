@@ -1,0 +1,45 @@
+An identifier is a name used to identify a variable, function, array, structure, or any other user-defined item. Identifiers are crucial in C because they give programmers a way to refer to different elements of the program in a readable and understandable manner.
+
+identifiers rules:
+------------------
+
+1] Characters Allowed:
+
+• Identifiers can consist of letters (both uppercase A-Z and lowercase a-z), digits (0-9), and the underscore (_).
+
+• The first character of an identifier must be a letter or an underscore. It cannot be a digit.
+
+• Subsequent characters can be letters, digits, or underscores.
+
+2] Length:
+
+• The C standard does not limit the length of an identifier, but in practice, the length may be limited by the compiler. Traditionally, the first 31 characters are significant in external identifiers (e.g., functions) and the first 63 characters are significant for internal identifiers (e.g., local variables).
+
+3] Keywords:
+
+• Identifiers cannot be a reserved keyword in C. Keywords have a predefined meaning in C and are reserved for special functions (e.g., int, return, for, if).
+
+4] No Special Characters:
+
+• Identifiers cannot include special characters other than the underscore (_). Characters such as @, $, %, &, #, " "(white-space) etc., are not allowed.
+
+5] Underscore Use:
+
+• While identifiers can start with an underscore, doing so is generally discouraged because identifiers starting with an underscore followed by an uppercase letter or another underscore are reserved for use by the implementation (i.e., the standard library and compiler).
+
+Valid Identifiers:
+-----------------
+• int age;
+• float total_balance;
+• char firstName[50];
+• _score; // valid but discouraged for general use
+• sum2;
+
+
+Invalid Identifiers:
+-------------------
+• int 2ndPlayer;    // Cannot start with a digit
+• float total#balance; // Contains invalid character '#'
+• char first Name[50]; // Contains a space
+• int for; // 'for' is a keyword
+• double &amount; // Contains invalid character '&'

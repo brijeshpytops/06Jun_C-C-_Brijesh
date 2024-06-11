@@ -1,0 +1,66 @@
+a data type is a classification that specifies the type of data a variable can hold and how much space it occupies in memory. Data types in C define the kind of operations that can be performed on the data and how it is stored. Each data type in C has a specific range of values it can represent and a specific set of operations that can be performed on it.
+
+Primary Data Types in C:
+
+Basic (or Primitive) Data Types:
+
+int: Represents integer numbers (whole numbers without a decimal point).
+
+Example: int age = 30;
+
+
+float: Represents single-precision floating-point numbers (numbers with a fractional part).
+
+Example: float temperature = 36.5;
+
+
+double: Represents double-precision floating-point numbers (larger and more precise than float).
+
+Example: double balance = 12345.67;
+
+char: Represents a single character (typically stored in a single byte).
+
+Example: char grade = 'A';
+
+
+
+Derived (or Non Primitive) Data Types:
+
+array: A collection of elements of the same type stored in contiguous memory locations.
+
+Example: int scores[5] = {90, 85, 78, 88, 92};
+
+pointer: A variable that stores the address of another variable.
+
+Example: int *p;
+
+structure: A user-defined data type that groups related variables of different types.
+
+Example:
+struct Student {
+    char name[50];
+    int age;
+    float gpa;
+};
+
+union: Similar to a structure, but with all members sharing the same memory location.
+
+union Data {
+    int i;
+    float f;
+    char str[20];
+};
+
+
+Enumeration (enum):
+A user-defined type that consists of a set of named integer constants.
+
+Example:
+
+enum Weekday {Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday};
+
+Void Type:
+
+void: Represents the absence of any type. Commonly used for functions that do not return a value.
+
+Example: void displayMessage();

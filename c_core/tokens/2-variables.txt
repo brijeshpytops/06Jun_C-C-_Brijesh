@@ -1,0 +1,26 @@
+A variable in C is a named location in memory that is used to store data which can be modified during program execution.
+
+syntax:
+data_type variable_name = value;
+
+int age = 17;
+
+float price = 45.78;
+
+int price = 45;
+
+int num1 = 10, num2 = 20, num3;
+num3 = num1 + num2
+
+int num1 = num2 = num3 = 50; - not valid
+
+valid:
+int num1, num2, num3;
+num1 = num2 = num3 = 50;
+
+# get value from the user
+
+int age;
+
+printf("Enter your age: ");
+scanf("%d", &age);
