@@ -1,0 +1,176 @@
+In C programming, an operator is a symbol that tells the compiler to perform specific mathematical, relational, or logical operations and produce a final result. Operators are essential in C as they are used to manipulate data and variables within expressions. C provides a rich set of operators to handle different types of operations.
+
+Arithmetic Operators
+--------------------
+These operators are used to perform mathematical calculations such as addition, subtraction, multiplication, and division.
+
++ : Addition
+- : Subtraction
+* : Multiplication
+/ : Division
+% : Modulus (returns the remainder of a division)
+
+Example : 
+int a = 10, b = 5;
+int sum = a + b;    // sum = 15
+int difference = a - b; // difference = 5
+int product = a * b; // product = 50
+int quotient = a / b; // quotient = 2
+int remainder = a % b; // remainder = 0
+
+
+Relational Operators
+--------------------
+These operators are used to compare two values. The result of a relational expression is either true (1) or false (0).
+
+== : Equal to
+!= : Not equal to
+> : Greater than
+< : Less than
+>= : Greater than or equal to
+<= : Less than or equal to
+
+Example :
+int a = 10, b = 20;
+int result;
+
+result = (a == b);  // result = 0 (false)
+result = (a != b);  // result = 1 (true)
+result = (a > b);   // result = 0 (false)
+result = (a < b);   // result = 1 (true)
+result = (a >= b);  // result = 0 (false)
+result = (a <= b);  // result = 1 (true)
+
+
+Logical Operators
+-----------------
+These operators are used to combine conditional statements.
+
+&& : Logical AND
+|| : Logical OR
+! : Logical NOT
+
+Example :
+int a = 10, b = 20;
+int result;
+
+result = (a > 0 && b > 0); // result = 1 (true)
+result = (a > 0 || b < 0); // result = 1 (true)
+result = !(a > 0);         // result = 0 (false)
+
+
+Bitwise Operators
+-----------------
+These operators perform bit-level operations on the data.
+
+& : Bitwise AND
+| : Bitwise OR
+^ : Bitwise XOR
+~ : Bitwise NOT
+<< : Left shift
+>> : Right shift
+
+Example :
+int a = 5, b = 3; // Binary: a = 0101, b = 0011
+int result;
+
+result = a & b; // result = 1 (0001)
+result = a | b; // result = 7 (0111)
+result = a ^ b; // result = 6 (0110)
+result = ~a;    // result = -6 (two's complement of 0101)
+result = a << 1; // result = 10 (1010)
+result = a >> 1; // result = 2 (0010)
+
+
+Assignment Operators
+--------------------
+These operators are used to assign values to variables.
+= : Simple assignment
++= : Add and assign
+-= : Subtract and assign
+*= : Multiply and assign
+/= : Divide and assign
+%= : Modulus and assign
+<<= : Left shift and assign
+>>= : Right shift and assign
+&= : Bitwise AND and assign
+^= : Bitwise XOR and assign
+|= : Bitwise OR and assign
+
+Example :
+int a = 10;
+a += 5;  // a = 15
+a -= 3;  // a = 12
+a *= 2;  // a = 24
+a /= 4;  // a = 6
+a %= 5;  // a = 1
+
+
+Increment and Decrement Operators
+These operators are used to increase or decrease the value of a variable by 1.
+
+++ : Increment
+-- : Decrement
+
+Example : 
+int a = 10;
+a++;  // a = 11
+a--;  // a = 10
+
+
+Conditional (Ternary) Operator
+------------------------------
+This operator evaluates a condition and returns one of two values based on the result of the condition.
+
+? : : Conditional
+
+Example :
+int a = 10, b = 20;
+int max = (a > b) ? a : b; // max = 20
+
+ Comma Operator
+This operator allows multiple expressions to be evaluated in a single statement, with the value of the last expression being the result.
+
+, : Comma
+
+Example :
+int a = (10, 20, 30); // a = 30
+
+
+Sizeof Operator
+This operator returns the size of a data type or object in bytes.
+
+sizeof : Sizeof
+
+Example :
+int a = 10;
+int size = sizeof(a); // size = 4 (on most systems)
+
+Pointer Operators
+These operators are used to manipulate pointers.
+
+* : Dereference (used to access the value at a given memory address)
+& : Address of (used to get the address of a variable)
+
+Example : 
+int a = 10;
+int *ptr = &a; // ptr holds the address of a
+int value = *ptr; // value = 10, dereferencing ptr to get the value of a
+
+Member Access Operators
+These operators are used to access members of structures and unions.
+
+. : Member access (direct access)
+-> : Member access through pointer
+
+Example :
+struct Point {
+    int x;
+    int y;
+};
+
+struct Point p = {10, 20};
+int x_value = p.x; // Direct access, x_value = 10
+
+struct Point *ptr = &p;
+int y_value = ptr->y; // Access through pointer, y_value = 20
