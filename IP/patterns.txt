@@ -1,0 +1,82 @@
+num = 5 - odd
+
+* * * 
+* 1 *
+* * *
+=====
+* * * 
+* 2 *
+* * *
+=====
+* * * 
+* 3 *
+* * *
+
+* * * * * 
+*       *
+*   1   *
+*       *
+* * * * *
+=========
+* * * * * 
+*       *
+*   2   *
+*       *
+* * * * *
+=========
+* * * * * 
+*       *
+*   3   *
+*       *
+* * * * *
+=========
+* * * * * 
+*       *
+*   4   *
+*       *
+* * * * *
+=========
+* * * * * 
+*       *
+*   5   *
+*       *
+* * * * *
+
+
+// conditionl statments and loops
+#include<iostream>
+using namespace std;
+
+int main(){
+    int num = 7;
+    int flag = (num/2) + 1;
+    if (num % 2 != 0){
+        for(int counter = 1; counter<= num; counter++){
+            for(int row = 1; row<=num; row++){
+                for(int col = 1; col <= num; col++){
+                    
+                    if(row == flag && col == flag){
+                        cout<<counter<<" ";
+                    }else{
+                        if(row == 1 || col == 1 || row == num || col == num){
+                            
+                            cout<<"* ";
+                        }else{
+                            cout<<"  ";
+                        }
+                    }
+                }
+                cout<<endl;
+            }
+            if (counter < num){
+                
+                for(int equal = 1; equal<=((num*2)-1); equal++){
+                    cout<<"=";
+                }
+            }
+            cout<<endl;
+        }   
+    }else{
+        cout<<"Invalid number"<<endl<<"Number must be Odd";
+    }    
+}
