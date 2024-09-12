@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<string.h>
+
+void uppar_case(char str[]){
+    for(int i = 0; i<strlen(str); i++){
+        if (str[i] >= 'A' && str[i] <= 'Z'){
+            printf("%c", str[i]);
+        }else{
+            printf("%c", str[i]-32);
+        }
+    }
+}
+
+void main(){ 
+    char str1[100];
+    printf("Enter something: ");
+    fgets(str1, sizeof(str1), stdin);
+    uppar_case(str1);
+}
+
+
+1] get string from the user: HeLLo WOrlD
+
+function uppar_case: HELLO WORLD
+function lower_case: hello world
+function title_case: Hello World
+function capitalize: Hello world
+function swap_case: hEllO woRLd
+function zero_one: 1001100 1100001
+UPPER_CASE - 1, LOWER_CASE - 00, WHITE_SPACE = " "

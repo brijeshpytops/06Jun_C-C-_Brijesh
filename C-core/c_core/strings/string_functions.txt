@@ -1,0 +1,91 @@
+#include<stdio.h>
+#include<string.h>
+
+void main(){
+    char name[100];
+    printf("Enter your name: ");
+    //   scanf("%s", &name);
+    fgets(name, sizeof(name), stdin);
+   
+    printf("%s", name);
+}
+
+
+conate:
+
+#include<stdio.h>
+#include<string.h>
+
+void main(){ 
+    char fname[100] = "Brijesh";
+    char space[] = " ";
+    char lname[100] = "Gondaliya";
+    
+   strcat(fname, space);
+   strcat(fname, lname);
+    printf("%s", fname);
+}
+
+
+copy string:
+
+#include<stdio.h>
+#include<string.h>
+
+void main(){ 
+    char str1[] = "Brijesh";
+    char str2[20];
+    
+    strcpy(str2, str1);
+
+    printf("%s", str2);
+}
+
+
+#include<stdio.h>
+#include<string.h>
+
+void main(){ 
+    char str1[] = "Brijesh gondaliya";
+    
+    int len = sizeof(str1)/sizeof(str1[0]);
+
+    // printf("string length: %d", len);
+    
+    for(int i = 0; i<len-1; i++){
+        printf("%c", str1[i]);
+    }
+}
+
+
+#include<stdio.h>
+#include<string.h>
+
+void main(){ 
+    char str1[] = "Brijesh gondaliya";
+    
+    int len = strlen(str1);
+    
+    for(int i = 0; i<len; i++){
+        printf("%c", str1[i]);
+    }
+}
+
+
+// string comapre
+
+#include<stdio.h>
+#include<string.h>
+
+void main(){ 
+    char str1[] = "Hello";
+    char str2[] = "hello";
+    
+   int res = strcmp(str1, str2);
+   printf("diff. %d\n", res);
+   if (res == 0){
+       printf("Both string are same");
+   }else{
+       printf("Both string are diffrent");
+   }
+}
