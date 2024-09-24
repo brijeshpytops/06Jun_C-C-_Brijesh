@@ -1,0 +1,19 @@
+class and objects
+Encapsulation
+    - access specifiers
+    - constructor and destructor
+    - getter and setter method
+Inheritance
+    - sigle
+    - multi-level
+    - multiple
+    - hierarchical
+    - hybrid
+Polymorphism
+    - compile-time poly. [static binding]
+    - run-time poly. [dynamic binding]
+
+- inline-function
+- friend-function
+- virtual-function
+
