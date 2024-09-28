@@ -9,6 +9,7 @@ Inheritance
     - multiple
     - hierarchical
     - hybrid
+
 Polymorphism
     - compile-time poly. [static binding]
     - run-time poly. [dynamic binding]
