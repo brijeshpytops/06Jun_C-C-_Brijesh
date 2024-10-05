@@ -11,8 +11,8 @@ Inheritance
     - hybrid
 
 Polymorphism
-    - compile-time poly. [static binding]
-    - run-time poly. [dynamic binding]
+    - method over-loading - compile-time poly. [static binding]
+    - method overriding - run-time poly. [dynamic binding]
 
 - inline-function
 - friend-function
